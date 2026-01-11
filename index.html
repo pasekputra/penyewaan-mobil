@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+   <title>Rent-Cars</title
+    >
+    
+  </head>
+  <body>
+    <!-- header -->
+    <header
+   
+      class="absolute left-0 w-full flex items-center z-10 bg-white md:py-5 sm:py-5 lg:p-0"
+    >
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between relative">
+          <!-- Brand -->
+          <div class="px-2">
+            <a
+              href="#home"
+              class="font-bold lg:text-4xl md:text-3xl sm:text-3xl xs:text-sky-800 text-primary block py-2 rent"
+            >
+              Rent Cars
+            </a>
+          </div>
+
+          <!-- Right Side -->
+          <div class="flex items-center px-5">
+            <!-- Hamburger -->
+            <button id="hamburger" class="block absolute right-4 lg:hidden">
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+
+            <!-- Navigation -->
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex ">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Beranda</a
+                  >
+                </li>
+          
+         
+                <li class="group">
+                  <a
+                  href="#pricelist"
+                  class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                  >Harga</a
+                  >
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#galery"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Galery</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Tentang Kami</a
+                  >
+                </li>
+
+       
+                
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Hubungi Kami</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- end header -->
+    <!-- hero section -->
+
+    <section
+    id="home"
+      class="hero lg:p-36 md:p-36 sm:p-36 h-[100dvh] md:h-[100dvh] bg-[url('/src/back/back-hero.jpg')] bg-cover bg-center bg-no-repeat bg-fixed brightness-90 contrast-100 saturate-125"
+    >
+      <!-- <div
+        class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white/60 via-white/30 to-transparent backdrop-blur-md"
+      ></div> -->
+
+      <div class="container">
+        <!-- bagian left -->
+        <!-- flex-wrap agar mau turun kebawah -->
+        <div class="flex flex-wrap lg:mt-5">
+          <!-- self-center agar semuanya di tengah -->
+          <div class="w-full self-center  lg:w-1/2 md:mt-24 sm:mt-10">
+            <h1 class="font-bold text-black lg:text-5xl sm:text-3xl cheap">
+         Sewa Mobil Murah, Jelajahi Bali Tanpa Batas!
+            </h1>
+            <p class="font-medium text-white lg:text-2xl sm:text-xl  mb-10  leading-relaxed desc">
+           
+Nikmati perjalanan nyaman di Bali dengan harga terjangkau bersama 
+  <span class="text-dark font-bold"> Rent Cars</span>. 
+  Kami menyediakan berbagai pilihan mobil bersih dan terawat, siap menemani liburan atau perjalanan bisnis Anda. 
+  Pesan sekarang dan rasakan layanan terbaik dengan harga bersahabat!
+
+            </p>
+
+            <a
+              href="#contact"
+              class="font-bold bg-primary text-white py-3 px-8 rounded-full hover:shadow-lg hover:scale-125 duration-300 ease-in-out button"
+               data-aos="zoom-in"  data-aos-delay="100"
+              >Hubungi Kami</a
+            >
+          </div>
+          <!-- end left -->
+
+          <!-- right -->
+           
+          <div class="w-full self-end px-4 lg:w-1/2 md:mt-60 sm:mt-60">
+            <div class="relative mt-10 lg:mt-10 lg:right-0" data-aos="fade-left"  data-aos-delay="100" >
+              <img
+                src="src/img/hero.png"
+                alt=""
+                class="relative lg:w-150 md:w-125 sm:w-125 mx-auto -mt-70 cars"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- end right -->
+      </div>
+    </section>
+    <!-- end hero section -->
+
+    <!-- pricelist without-drive  -->
+    <section class="bg-slate-200 pt-26 pb-16" id="pricelist">
+      <div class="continer">
+        <!-- widthout drivers -->
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-1">
+            <h4
+              class="font-semibold lg:text-xl md:text-3xl sm:text-4xl text-sky-400"
+            >
+               Harga Sewa Mobil
+            </h4>
+            <h2
+              class="font-bold text-black text-3xl md:text-5xl sm:text-5xl mb-4"
+            >
+              Tanpa Sopir
+            </h2>
+          </div>
+        </div>
+
+        <!-- img car -->
+        <!-- xl:w-10/12 xl:mx-auto mengattur di layar besar -->
+        <div data-aos="zoom-up"  data-aos-duration="1000"
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto xl:gap-5 md:gap-3"
+        >
+          <!-- avanza -->
+          <div 
+            class="mt-5 p-4 bg-white shadow-xl/20  rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/avanza.jpg"
+                alt=""
+                class="w-75 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Toyota Avanza New
+            </h3>
+            <p class="font-medium text-base text-center">
+          
+Toyota Avanza New adalah pilihan ideal untuk perjalanan keluarga di Bali. 
+  Nyaman, hemat bahan bakar, dan dilengkapi dengan fitur modern untuk pengalaman berkendara yang aman dan menyenangkan.
+
+            </p>
+            <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!--end img car -->
+          <!-- end avanza -->
+
+          <!-- xenia -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/xania.jpg"
+                alt=""
+                class="w-80 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Dihatsu Xenia New
+            </h3>
+            <p class="font-medium text-base text-center">
+       
+  Daihatsu Xenia New adalah mobil keluarga yang nyaman dan irit bahan bakar. 
+  Cocok untuk perjalanan wisata di Bali dengan ruang kabin luas dan fitur modern untuk kenyamanan Anda.
+
+            </p>
+
+             <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  --
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!--  <!-- end xenia -->
+
+          <!-- terios -->
+
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/terios.jpg"
+                alt=""
+                class="w-65 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Dihatsu Trios New
+            </h3>
+            <p class="font-medium text-base text-center">
+           
+  Daihatsu Terios New adalah SUV tangguh dengan desain modern, cocok untuk menjelajahi Bali. 
+  Dilengkapi dengan kabin luas, fitur keselamatan lengkap, dan performa handal untuk perjalanan nyaman.
+
+            </p>
+
+            <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+
+          <!-- end terios -->
+
+          <!-- xpander -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/xpander-cross.jpg"
+                alt=""
+                class="w-85 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Mitsubishi Xpander Cross
+            </h3>
+            <p class="font-medium text-base text-center">
+           
+Mitsubishi Xpander Cross adalah MPV premium dengan desain stylish dan kabin luas. 
+  Cocok untuk perjalanan keluarga atau liburan di Bali, dilengkapi fitur modern dan kenyamanan maksimal.
+
+            </p>
+
+              <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- end xpander -->
+
+          <!-- inova  -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/inova-reborn.jpg"
+                alt=""
+                class="w-85 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Toyota Inova Reborn
+            </h3>
+            <p class="font-medium text-base text-center">
+      
+  Toyota Innova Reborn adalah MPV premium dengan kenyamanan maksimal dan ruang kabin luas. 
+  Cocok untuk perjalanan keluarga atau bisnis di Bali, dilengkapi fitur modern dan performa handal.
+
+            </p>
+
+              <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- end inova  -->
+
+          <!-- fortuner  -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/fortuner.jpg"
+                alt=""
+                class="w-90 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Toyota Fortuner 2.8 GR
+            </h3>
+            <p class="font-medium text-base text-center">
+              Toyota Fortuner 2.8 GR adalah SUV premium dengan performa tangguh dan kenyamanan maksimal. 
+              Cocok untuk perjalanan keluarga atau bisnis di Bali, dilengkapi fitur modern dan desain yang stylish.
+            </p>
+
+              <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- end fortuner  -->
+
+          <!-- pajero -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/pajero.jpg"
+                alt=""
+                class="w-90 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Mitsubishi Pajero Sport Dakar 4X4
+            </h3>
+            <p class="font-medium text-base text-center">
+            
+Mitsubishi Pajero Sport Dakar 4X4 hadir dengan tenaga kuat dan fitur off-road terbaik. 
+  Pilihan ideal untuk Anda yang ingin menjelajahi Bali dengan gaya dan kenyamanan.
+
+            </p>
+
+              <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- end pajero -->
+
+          <!-- haice -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/haice.jpg"
+                alt=""
+                class="w-85 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Toyota Hiace 2.5L
+            </h3>
+            <p class="font-medium text-base text-center">
+           
+oyota Hiace 2.5L adalah kendaraan ideal untuk rombongan besar. 
+  Dengan kapasitas luas dan kenyamanan maksimal, cocok untuk perjalanan wisata atau bisnis di Bali.
+
+            </p>
+
+              <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- end haice -->
+        </div>
+        <!-- description -->
+        <div class="flex flex-wrap justify-center xl:mx-auto gap-x-8">
+          <div
+            class="lg:mt-15 md:mt-10 sm:mt-10 p-8 justify-wrap bg-white shadow-xl/30 rounded-lg h-auto lg:w-120 md:w-175 benefit"
+            data-aos="fade-right"  data-aos-duration="2000"
+          >
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Benefit Penyewaan Mobil Tanpa Sopir
+            </h3>
+            <p class="font-medium text-base">
+              ✅Layanan rental mobil tanpa sopir kami menawarkan fleksibilitas
+              dan kebebasan bagi pelanggan yang ingin mengemudi sendiri. Dengan
+              berbagai pilihan kendaraan yang nyaman dan terawat, harga sewa
+              dimulai dari Rp300.000 per hari, tergantung jenis mobil dan durasi
+              sewa. Biaya sewa sudah termasuk asuransi dasar dan pemeliharaan
+              rutin, namun belum termasuk biaya bahan bakar dan tol. Layanan ini
+              cocok bagi Anda yang ingin bepergian secara mandiri tanpa terikat
+              jadwal sopir.
+            </p>
+          </div>
+
+          <div
+            class="lg:mt-15 md:mt-10 sm:mt-10 p-8 justify-wrap bg-white shadow-xl/30 rounded-lg h-auto lg:w-120 md:w-175 benefit-2"
+            data-aos="fade-left"  data-aos-duration="2000"
+          >
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Benefit of Renting a Car Without Driver
+            </h3>
+            <p class="font-medium text-base">
+              ✅Layanan rental mobil tanpa sopir kami menawarkan fleksibilitas
+              dan kebebasan bagi pelanggan yang ingin mengemudi sendiri. Dengan
+              berbagai pilihan kendaraan yang nyaman dan terawat, harga sewa
+              dimulai dari Rp300.000 per hari, tergantung jenis mobil dan durasi
+              sewa. Biaya sewa sudah termasuk asuransi dasar dan pemeliharaan
+              rutin, namun belum termasuk biaya bahan bakar dan tol. Layanan ini
+              cocok bagi Anda yang ingin bepergian secara mandiri tanpa terikat
+              jadwal sopir.
+            </p>
+          </div>
+        </div>
+        <!-- end description -->
+         <!-- without-frivers -->
+
+<!-- with driver -->
+         <div class="w-full px-4 lg:mt-25 md:mt-10 sm:mt-10 driver">
+          <div class="max-w-xl mx-auto text-center mb-1">
+            <h4
+              class="font-semibold lg:text-xl md:text-3xl sm:text-4xl text-sky-400"
+            >
+            Harga Sewa
+            </h4>
+            <h2
+              class="font-bold text-black text-3xl md:text-5xl sm:text-5xl mb-4"
+            >
+              Dengan Sopir
+            </h2>
+          </div>
+        </div>
+        <!-- img car -->
+        <!-- xl:w-10/12 xl:mx-auto mengattur di layar besar -->
+        <div data-aos="zoom-up"  data-aos-duration="1000"
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto xl:gap-5 md:gap-3"
+        >
+          <!-- avanza -->
+          <div 
+            class="mt-5 p-4 bg-white shadow-xl/20  rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/avanza.jpg"
+                alt=""
+                class="w-75 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Toyota Avanza New
+            </h3>
+            <p class="font-medium text-base text-center">
+          
+Toyota Avanza New adalah pilihan ideal untuk perjalanan keluarga di Bali. 
+  Nyaman, hemat bahan bakar, dan dilengkapi dengan fitur modern untuk pengalaman berkendara yang aman dan menyenangkan.
+
+            </p>
+            <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!--end img car -->
+          <!-- end avanza -->
+
+          <!-- xenia -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/xania.jpg"
+                alt=""
+                class="w-80 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Dihatsu Xenia New
+            </h3>
+            <p class="font-medium text-base text-center">
+       
+  Daihatsu Xenia New adalah mobil keluarga yang nyaman dan irit bahan bakar. 
+  Cocok untuk perjalanan wisata di Bali dengan ruang kabin luas dan fitur modern untuk kenyamanan Anda.
+
+            </p>
+
+             <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  --
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!--  <!-- end xenia -->
+
+          <!-- terios -->
+
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/terios.jpg"
+                alt=""
+                class="w-65 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Dihatsu Trios New
+            </h3>
+            <p class="font-medium text-base text-center">
+           
+  Daihatsu Terios New adalah SUV tangguh dengan desain modern, cocok untuk menjelajahi Bali. 
+  Dilengkapi dengan kabin luas, fitur keselamatan lengkap, dan performa handal untuk perjalanan nyaman.
+
+            </p>
+
+            <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+
+          <!-- end terios -->
+
+          <!-- xpander -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/xpander-cross.jpg"
+                alt=""
+                class="w-85 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Mitsubishi Xpander Cross
+            </h3>
+            <p class="font-medium text-base text-center">
+           
+Mitsubishi Xpander Cross adalah MPV premium dengan desain stylish dan kabin luas. 
+  Cocok untuk perjalanan keluarga atau liburan di Bali, dilengkapi fitur modern dan kenyamanan maksimal.
+
+            </p>
+
+              <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- end xpander -->
+
+          <!-- inova  -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/inova-reborn.jpg"
+                alt=""
+                class="w-85 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Toyota Inova Reborn
+            </h3>
+            <p class="font-medium text-base text-center">
+      
+  Toyota Innova Reborn adalah MPV premium dengan kenyamanan maksimal dan ruang kabin luas. 
+  Cocok untuk perjalanan keluarga atau bisnis di Bali, dilengkapi fitur modern dan performa handal.
+
+            </p>
+
+              <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- end inova  -->
+
+          <!-- fortuner  -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/fortuner.jpg"
+                alt=""
+                class="w-90 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Toyota Fortuner 2.8 GR
+            </h3>
+            <p class="font-medium text-base text-center">
+              Toyota Fortuner 2.8 GR adalah SUV premium dengan performa tangguh dan kenyamanan maksimal. 
+              Cocok untuk perjalanan keluarga atau bisnis di Bali, dilengkapi fitur modern dan desain yang stylish.
+            </p>
+
+              <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- end fortuner  -->
+
+          <!-- pajero -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/pajero.jpg"
+                alt=""
+                class="w-90 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Mitsubishi Pajero Sport Dakar 4X4
+            </h3>
+            <p class="font-medium text-base text-center">
+            
+Mitsubishi Pajero Sport Dakar 4X4 hadir dengan tenaga kuat dan fitur off-road terbaik. 
+  Pilihan ideal untuk Anda yang ingin menjelajahi Bali dengan gaya dan kenyamanan.
+
+            </p>
+
+              <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a  href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- end pajero -->
+
+          <!-- haice -->
+          <div
+            class="mt-5 p-4 bg-white shadow-xl/20 rounded-lg h-auto w-100 md:w-85 sm:w-full"
+          >
+            <div class="rounded-lg">
+              <img
+                src="src/img/haice.jpg"
+                alt=""
+                class="w-85 rounded-md mx-auto mt-5"
+              />
+            </div>
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Toyota Hiace 2.5L
+            </h3>
+            <p class="font-medium text-base text-center">
+           
+oyota Hiace 2.5L adalah kendaraan ideal untuk rombongan besar. 
+  Dengan kapasitas luas dan kenyamanan maksimal, cocok untuk perjalanan wisata atau bisnis di Bali.
+
+            </p>
+
+              <div class="flex justify-center mt-2 gap-4">
+          
+              <h5 class="my-4 text-lg">👨‍👩‍👧‍👦7 Seats</h5>
+           
+
+              <h5 class="my-4 text-lg">⚙️ Automatic</h5>
+            </div>
+            <!--price  -->
+            <div class="justify-center font-semibold">
+              <div class="space-y-4 lg:mx-auto md:mx-auto sm:mx-auto">
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">1 - 6 Hari</p>
+                  <p class="font-semibold text-primary">650K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">7 - 13 Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                  <p class="text-gray-700">14+ Hari</p>
+                  <p class="font-semibold text-primary">600K</p>
+                </div>
+              </div>
+              
+            </div>
+            <!--end price  -->
+
+            <div
+     
+              class="flex justify-center mt-5 bg-blue hover:bg-sky-400 duration-300 transition ease-in-out h-10 w-30 rounded-lg cursor-pointer mx-auto"
+            >
+              <a href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" href="https://wa.me/6287810179370" target="_blank" rel="noopener noreferrer" class="px-auto mt-2 text-center text-white"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- end haice -->
+        </div>
+        <!-- description -->
+        <div class="flex flex-wrap justify-center xl:mx-auto gap-x-8">
+          <div
+            class="lg:mt-15 md:mt-10 sm:mt-10 p-4 justify-wrap bg-white shadow-xl/30 rounded-lg h-auto lg:w-120 md:w-175 benefit"
+             data-aos="fade-right"  data-aos-duration="2000"
+          >
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+              Benefit Penyewaan Mobil Dengan Sopir
+            </h3>
+            <p class="font-medium text-base">
+             ✅ Nikmati perjalanan tanpa stres dengan sopir yang ramah dan berpengalaman. Semua kendaraan kami terawat dengan baik, dilengkapi fitur keselamatan, sehingga Anda bisa fokus menikmati liburan.
+            </p>
+          </div>
+
+          <div
+            class="lg:mt-15 md:mt-10 sm:mt-10 p-4 justify-wrap bg-white shadow-xl/30 rounded-lg h-auto lg:w-120 md:w-175 benefit-2"
+             data-aos="fade-left"  data-aos-duration="2000"
+          >
+            <h3
+              class="font-semibold text-xl text-center text-sky-400 mt-2 mb-3"
+            >
+                Benefit Penyewaan Mobil Dengan Sopir
+            </h3>
+            <p class="font-medium text-base">
+     ✅ Nikmati perjalanan tanpa stres dengan sopir yang ramah dan berpengalaman. Semua kendaraan kami terawat dengan baik, dilengkapi fitur keselamatan, sehingga Anda bisa fokus menikmati liburan.
+            </p>
+          </div>
+        </div>
+        <!-- end description -->
+         <!-- with driver -->
+      </div>
+      </div>
+    </section>
+
+
+
+    <!-- end pricelist with-drive  -->
+
+
+    <!-- galery -->
+     <section id="galery" class="bg-slate-800 pt-36 pb-32">
+<div class="container mx-auto">
+  <div class="w-full ">
+    <div class=" mx-auto text-center mb-16">
+      <h4 class="font-semibold text-lg text-primary mb-2">Galery</h4>
+      <h2
+        class="font-bold text-3xl mb-4 sm:text-4xl lg:text-5xl text-white"
+      >
+         Galery Kami
+      </h2>
+      <p class="font-medium text-md text-secondary md:text-lg">
+    Lihat koleksi mobil kami yang siap menemani perjalanan Anda di Bali. Semua kendaraan terawat dengan baik, bersih, dan nyaman untuk liburan atau perjalanan bisnis.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <img src="src/img/avanza.jpg" alt="" class="w-90 h-auto object-cover rounded-lg 
+    transform transition-all duration-300 ease-in-out 
+    shadow-md 
+    hover:scale-102 hover:shadow-xl hover:shadow-blue-500" />
+    <img src="src/img/fortuner.jpg" alt="" class="w-90 h-auto object-cover rounded-lg 
+    transform transition-all duration-300 ease-in-out 
+    shadow-md 
+    hover:scale-102 hover:shadow-xl hover:shadow-blue-500" />
+    <img src="src/img/pajero.jpg" alt="" class="w-90 h-auto object-cover rounded-lg 
+    transform transition-all duration-300 ease-in-out 
+    shadow-md 
+    hover:scale-102 hover:shadow-xl hover:shadow-blue-500" />
+    <img src="src/img/avanza.jpg" alt="" class="w-90 h-auto object-cover rounded-lg 
+    transform transition-all duration-300 ease-in-out 
+    shadow-md 
+    hover:scale-102 hover:shadow-xl hover:shadow-blue-500" />
+    <img src="src/img/fortuner.jpg" alt="" class="w-90 h-auto object-cover rounded-lg 
+    transform transition-all duration-300 ease-in-out 
+    shadow-md 
+    hover:scale-102 hover:shadow-xl hover:shadow-blue-500" />
+    <img src="src/img/pajero.jpg" alt="" class="w-90 h-auto object-cover rounded-lg 
+    transform transition-all duration-300 ease-in-out 
+    shadow-md 
+    hover:scale-102 hover:shadow-xl hover:shadow-blue-500" />
+    <img src="src/img/avanza.jpg" alt="" class="w-90 h-auto object-cover rounded-lg 
+    transform transition-all duration-300 ease-in-out 
+    shadow-md 
+    hover:scale-102 hover:shadow-xl hover:shadow-blue-500" />
+    <img src="src/img/fortuner.jpg" alt="" class="w-90 h-auto object-cover rounded-lg 
+    transform transition-all duration-300 ease-in-out 
+    shadow-md 
+    hover:scale-102 hover:shadow-xl hover:shadow-blue-500" />
+
+</div>
+     </section>
+    <!-- end galery -->
+
+
+
+     <!--about us  -->
+
+ <!-- About Section -->
+<section id="about" class="bg-slate-100 pt-25 pb-32">
+  <div class="container mx-auto">
+    <div class="w-full">
+      <div class="mx-auto text-center mb-16 max-w-3xl">
+        <h3 class="text-4xl text-primary font-extrabold mb-4 uppercase tracking-wide">
+          Tentang Kami
+        </h3>
+
+        <p class="text-lg text-gray-700 mb-4 leading-relaxed p-5">
+     Selamat datang di 
+          <span class="font-semibold text-blue-600">
+            Rent Cars
+          </span>,
+     
+Mitra terpercaya Anda untuk layanan rental mobil di Bali. Kami menyediakan berbagai pilihan kendaraan yang nyaman, bersih, dan terawat untuk mendukung perjalanan bisnis maupun liburan Anda. 
+  Misi kami adalah memberikan pengalaman sewa mobil yang mudah, aman, dan terjangkau. Dari mobil keluarga hingga SUV premium, semua tersedia untuk memenuhi kebutuhan Anda. 
+  Pesan sekarang dan nikmati perjalanan tanpa khawatir!
+
+        </p>
+
+        <img src="src/img/pajero.jpg" class="rounded-lg mx-auto mt-8 w-full max-w-xl transform transition-all duration-300 ease-in-out shadow-md hover:scale-105 hover:shadow-xl hover-shadow-slate-00" alt="pajero_sport">
+      </div>
+    </div>
+
+    <!-- 3 Key Features -->
+    <div class="grid md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300"
+      data-aos="flip-left"  data-aos-duration="1000">
+        <div class="text-4xl text-primary mb-4">
+          🚘
+        </div>
+        <h4 class="text-xl font-semibold text-gray-800 mb-2">Pilihan Mobil Beragam</h4>
+        <p class="text-gray-600 text-sm">
+       Dari mobil kota hingga SUV — temukan kendaraan yang sesuai untuk setiap perjalanan atau acara.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300"
+      data-aos="flip-left"  data-aos-duration="2000">
+        <div class="text-4xl text-primary mb-4">
+          ⚡
+        </div>
+        <h4 class="text-xl font-semibold text-gray-800 mb-2">Booking Cepat</h4>
+        <p class="text-gray-600 text-sm">
+         Booking Cepat
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300"
+      data-aos="flip-left"  data-aos-duration="2000">
+        <div class="text-4xl text-primary mb-4">
+          📞
+        </div>
+        <h4 class="text-xl font-semibold text-gray-800 mb-2">Dukungan 24/7</h4>
+        <p class="text-gray-600 text-sm">
+      Tim kami siap membantu kapan saja — sebelum, selama, atau setelah penyewaan mobil Anda.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+     <!--end about us  -->
+
+
+        <!--contact  -->
+
+        <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+          <div class="container mx-auto">
+              <div class="w-full ">
+                  <div class=" mx-auto text-center mb-16">
+                      <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
+                      <h2
+                          class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white"
+                      >
+                         Hubungi Kami
+                      </h2>
+                      <p class="font-medium text-md text-secondary md:text-lg px-10">
+                        Siap menjelajahi Bali dengan mobil impian Anda? Hubungi kami sekarang dan nikmati layanan rental terbaik dengan harga bersahabat!
+                      </p>
+                  </div>
+              </div>
+      
+              <form id="form">
+                  <div class="w-full lg:w-2/4 lg:mx-auto">
+      
+                      <div class="w-full px-4 mb-8">
+                          <label for="name" class="text-primary font-bold uppercase"
+                              >Nama</label
+                          >
+                          <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                              required  />
+                      </div>
+                      <div class="w-full px-4 mb-8">
+                          <label for="email" class="text-primary font-bold uppercase"
+                              >Email</label
+                          >
+                          <input
+                              type="email" name="email"
+                              id="email"
+                              class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                              required  />
+                      </div>
+                      <div class="w-full px-4 mb-8">
+                          <label for="textarea" class="text-primary font-bold uppercase"
+                              >Textarea</label
+                          >
+                          <textarea
+                              name="textarea"
+                              id="textarea"
+                              class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
+                              required  ></textarea>
+                      </div>
+                      <div class="w-50 mx-auto px-4">
+                          <button
+                              name="submit"
+                              type="submit"
+                              id="submit"
+                              class="text-base cursor-pointer font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
+                             
+                          >
+                              Kirim Pesan
+                          </button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </section>
+    
+        <!-- end contact -->
+
+
+    <!-- footer -->
+     <footer class="bg-dark pt-24 pb-12">
+      <div class="container ">
+
+<div class="flex flex-wrap lg:ml-50 md:ml-15 sm:ml-15 feet  ">
+<div class="w-full  px-4 mb-12 text-slate-300 font-medium ">
+  <h2 class="font-bold text-4xl text-white mb-5">Rent Cars</h2>
+  <h3 class="font-bold text-2xl mb-2">------------</h3>
+  <p>rentcars456@gmail.com</p>
+  <p>Br.Tohjiwa, Desa Nyambu, Kediri, Tabanan</p>
+<p>Bali</p>
+</div>
+</div>
+
+
+      </div>
+
+     </footer>
+    <!-- footer -->
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+
+<script>
+  // menginisialisasi emailjs dengan user ID Anda
+
+  emailjs.init('2LPAtmJEAcnDXNVIl');
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script src="src/js/script.js"></script>
+
+    
+  </body>
+</html>
