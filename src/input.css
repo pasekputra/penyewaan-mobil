@@ -47,49 +47,54 @@
   }
 
   .hero {
-    height: 100vh;
+    height: auto; /* jangan pakai 100vh */
   }
 
   .cheap {
-    margin-top: 120px;
+    margin-top: 40px;
     padding: 8px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .desc {
-    margin-left: 25px;
-    margin-right: 10px;
-    padding: 15px;
+    margin: 0; /* HAPUS margin kiri kanan */
+    padding: 10px;
+    text-align: center;
   }
 
   .button {
-    margin-left: 125px;
-    margin-top: 125px;
+    margin: 20px auto; /* biar ke tengah */
+    display: block;
   }
 
   .cars {
-    margin-top: -40px;
+    margin-top: 0;
     padding: 8px;
   }
 
-  .price {
-    margin-left: 40px;
-  }
-
-  .driver {
-    margin-top: 60px;
-  }
-
-  .benefit {
-    margin-top: 40px;
-  }
-
-  .benefit-2 {
-    margin-top: 20px;
-  }
-
+  .price,
+  .driver,
+  .benefit,
+  .benefit-2,
   .feet {
-    margin-left: 20px;
+    margin: 0; /* HAPUS margin-left */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+  }
+
+  .cheap,
+  .desc,
+  .button {
+    text-align: center;
+  }
+
+  .button {
+    margin: 20px auto;
+    display: block;
   }
 }
