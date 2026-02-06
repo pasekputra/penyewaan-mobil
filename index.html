@@ -101,15 +101,18 @@
     <!-- end header -->
     <!-- hero section -->
 
-    <section
-    id="home"
-      class="hero lg:p-36 md:p-36 sm:p-36 h-[100dvh] md:h-[100dvh] bg-[url('/src/back/back-hero.jpg')] bg-cover bg-center bg-no-repeat bg-fixed brightness-90 contrast-100 saturate-125"
-    >
+<section
+  id="home"
+  style="background-image: url('public/back/back-hero.jpg');"
+  class="hero lg:p-36 md:p-36 sm:p-36 
+        bg-cover bg-center bg-no-repeat
+         brightness-90 contrast-100 saturate-125 overflow-hidden"
+>
       <!-- <div
         class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white/60 via-white/30 to-transparent backdrop-blur-md"
       ></div> -->
 
-      <div class="container pt-8">
+      <div class="container pt-8"/public>
         <!-- bagian left -->
         <!-- flex-wrap agar mau turun kebawah -->
         <div class="flex flex-wrap lg:mt-5">
@@ -138,12 +141,12 @@ Nikmati perjalanan nyaman di Bali dengan harga terjangkau bersama
 
           <!-- right -->
            
-          <div class="w-full self-end px-4 lg:w-1/2 ">
-            <div class="relative mt-10 lg:mt-10 lg:right-0" data-aos="fade-left"  data-aos-delay="100" >
+          <div class="w-full self-end px-4 lg:w-1/2  ">
+            <div class="relative mt-0 lg:mt-10 md:mt-14 lg:right-0" data-aos="fade-left"  data-aos-delay="100" >
               <img
                 src="src/img/hero.png"
                 alt=""
-                class="relative lg:w-150 md:w-125 sm:w-125 mx-auto -mt-70 cars  "
+                class="relative lg:w-150 md:w-125 sm:w-125 mx-auto lg:-translate-y-20 "
               />
             </div>
           </div>
